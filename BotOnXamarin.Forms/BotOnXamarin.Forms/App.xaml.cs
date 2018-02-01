@@ -13,7 +13,7 @@ namespace BotOnXamarin.Forms
 		{
 			InitializeComponent();
 
-			MainPage = new BotOnXamarin.Forms.MainPage();
+			MainPage = new BotOnXamarin.Forms.Views.MainPage();
 		}
 
 		protected override void OnStart ()
