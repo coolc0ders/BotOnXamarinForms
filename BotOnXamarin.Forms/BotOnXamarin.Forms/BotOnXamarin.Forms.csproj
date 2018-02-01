@@ -24,4 +24,13 @@
     <Folder Include="Models\" />
     <Folder Include="Services\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\DataTemplates\SentByBot.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DataTemplates\SentByUser.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

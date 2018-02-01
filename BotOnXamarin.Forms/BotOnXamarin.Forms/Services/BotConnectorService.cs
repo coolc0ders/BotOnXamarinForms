@@ -12,8 +12,8 @@ namespace BotOnXamarin.Forms.Services
     {
         public static Conversation BotConversation { get; set; }
         public static DirectLineClient Client { get; set; }
-        public const string BOT_HANDLE = "TestBot123rea";
-        string directLineSecret = "zGhi5NphP34.cwA.1YM.9Ylaghi6TnDi1DfpKmfLUOpQXu9EL886zCTYokz4Iec";
+        public const string BOT_HANDLE = "";
+        string directLineSecret = "";
         private static string WaterMark { get; set; }
         private static bool started;
         public event Action<List<BotMessage>> BotMessageReceived;
@@ -87,11 +87,10 @@ namespace BotOnXamarin.Forms.Services
             };
 
             await Client.Conversations.PostActivityAsync(BotConversation.ConversationId, userMesage)
-                .ConfigureAwait(false);
+                .ConfigureAwait(true);
             //We initiate the process of receiving messages
             //From the Bot.
             await ReceiveMessageAsync();
         }
-        
     }
 }
