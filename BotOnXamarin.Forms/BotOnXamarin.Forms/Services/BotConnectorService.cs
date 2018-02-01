@@ -12,8 +12,8 @@ namespace BotOnXamarin.Forms.Services
     {
         public static Conversation BotConversation { get; set; }
         public static DirectLineClient Client { get; set; }
-        public const string BOT_HANDLE = "";
-        string directLineSecret = "";
+        public const string BOT_HANDLE = "Testera";
+        string directLineSecret = "MUVA_6xC3NY.cwA.ipU.V8wKyZcVuqRlgAj2Z1I3u-Jzbry2gY4SHA2VJhzy27c";
         private static string WaterMark { get; set; }
         private static bool started;
         public event Action<List<BotMessage>> BotMessageReceived;

@@ -10,7 +10,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <StackLayout Margin="10, 5, 5, 5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand">
-                <Frame BackgroundColor="#F5F5F5" OutlineColor="Transparent">
+                <Frame BackgroundColor="DodgerBlue" OutlineColor="Transparent">
                     <Label Text="{Binding Content}" FontSize="Medium"/>
                 </Frame>
                 <Label FontSize="Micro" HorizontalOptions="Start" TextColor="Gray" Text="{Binding Time,  StringFormat='{0:MM/dd/yyyy hh:mm tt}'}"/>
